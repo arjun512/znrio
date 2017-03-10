@@ -7,7 +7,7 @@ future: true
 host:        0.0.0.0
 port:        4000
 baseurl:     /product
-imgurl:      http://omlf3utam.bkt.clouddn.com
+imgurl:      http://product.img.znr.io
 url:         http://localhost:4000
 lsi:         false
 excerpt_separator: "----"
