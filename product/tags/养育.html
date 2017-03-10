@@ -1,0 +1,18 @@
+---
+layout: index
+title: 养育
+author: 
+keywords: 创意商品,商品列表,优质实用
+description: 这里是最牛推荐(znr.io)精心采编的特别有创意、特别有创新的、实用并且时尚的优质商品列表。znr.io只收录、推荐最牛的创意商品！
+
+---
+
+{% for tag in site.tags %} 
+	{% if tag[0] == "养育" %}
+		<div class="row">
+		{% for post in tag[1] %}
+			{% include photo-water-flow.html %}
+		{% endfor %}
+		</div>
+	{% endif %}
+{% endfor %}
