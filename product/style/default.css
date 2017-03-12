@@ -1,3 +1,7 @@
+#main-nav-bar-2{
+	padding:0px;
+	margin:0px;
+}
 .body {
 	background-color: #ffffff;
 	padding-left:0px;
@@ -246,11 +250,6 @@ div.rsidebar-title p{
 
 /* RESPONSIVE CSS
    -------------------------------------------------- */
-@media (min-width: 768px) and (max-width: 868px){
-	.body{
-		padding-top:50px;
-	}
-}
 @media (min-width: 300px) and (max-width: 900px){
 	div.center img{
 		width: 100%;
@@ -278,6 +277,13 @@ div.rsidebar-title p{
 		padding-top:0px;
 		font-family: 宋体;
 		-ms-overflow-style: scrollbar;
+	}
+	.searchbarLinks{
+		padding-top:0px;
+		padding-bottom:0px;
+		margin-top:0px;
+		margin-bottom:0px;
+		width:350px;
 	}
 }
 
