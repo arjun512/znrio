@@ -25,7 +25,7 @@ description: 最牛推荐:发现好文章、好思想、好经历、好吃的、
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 上一页</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">&laquo; 上一页</a>
   {% else %}
     <span>&laquo; 上一页</span>
   {% endif %}
@@ -36,12 +36,12 @@ description: 最牛推荐:发现好文章、好思想、好经历、好吃的、
     {% elsif page == 1 %}
       <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/index.html"/>{{ page }}</a>
     {% endif %}
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页 &raquo;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">下一页 &raquo;</a>
   {% else %}
     <span>Next &raquo;</span>
   {% endif %}
