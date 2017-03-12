@@ -272,6 +272,13 @@ div.rsidebar-title p{
 		font-family: 宋体;
 		font-weight:bold;
 	}
+	.body {
+		background-color: #ffffff;
+		padding-left:0px;
+		padding-top:0px;
+		font-family: 宋体;
+		-ms-overflow-style: scrollbar;
+	}
 }
 
 @media (min-width: 768px) {
