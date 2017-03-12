@@ -246,11 +246,6 @@ div.rsidebar-title p{
 
 /* RESPONSIVE CSS
    -------------------------------------------------- */
-@media (min-width: 768px) and (max-width: 868px){
-	.body{
-		padding-top:50px;
-	}
-}
 @media (min-width: 300px) and (max-width: 900px){
 	div.center img{
 		width: 100%;
