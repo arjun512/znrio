@@ -34,7 +34,7 @@ description: 最牛推荐:发现好文章、好思想、好经历、好吃的、
     {% if page == paginator.page %}
       <em>{{ page }}</em>
     {% elsif page == 1 %}
-      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}/index.html">{{ page }}</a>
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/index.html"/>{{ page }}</a>
     {% endif %}
