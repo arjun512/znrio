@@ -1,8 +1,11 @@
 <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" >
 	<ul class="nav">
 		{% for tag in site.tags %}
-		<li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+			{% if tag[0] != "创意商品" %}
+			<li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+			{% endif %}
 		{% endfor %}
+		<li><a href="#hwbh">海外百货</a></li>
 		<li><a href="#lstd">零食、甜点</a></li>
 		<li><a href="#ymmz">衣帽、美妆</a></li>
 		<li><a href="#ylwh">娱乐、文化</a></li>

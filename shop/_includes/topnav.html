@@ -64,12 +64,17 @@
 				<li>
 					<a href="/index.html" style="font-weight:bold;color:red">深度好文</a>
 				</li>
-				<li><a href="#scht">商超、海淘</a></li>
+				{% for tag in site.tags %}
+					{% if tag[0] != "创意商品" %}
+					<li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+					{% endif %}
+				{% endfor %}
+				<li><a href="#hwbh">海外百货</a></li>
+				<li><a href="#lstd">零食、甜点</a></li>
 				<li><a href="#ymmz">衣帽、美妆</a></li>
 				<li><a href="#ylwh">娱乐、文化</a></li>
 				<li><a href="#jfjj">家纺、居家</a></li>
 				<li><a href="#qslp">轻奢、礼品</a></li>
-				<li><a href="#lstd">零食、甜点</a></li>
 				<li><a href="#jscy">酒水、茶叶</a></li>
 				<li><a href="#lxcj">旅行、出境</a></li>
 				<li><a href="#zszc">住宿、租车</a></li>
@@ -150,12 +155,17 @@
 				<li>
 					<a href="/index.html" style="font-weight:bold;color:red">深度好文</a>
 				</li>
-				<li><a href="#scht">商超、海淘</a></li>
+				{% for tag in site.tags %}
+					{% if tag[0] != "创意商品" %}
+					<li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+					{% endif %}
+				{% endfor %}
+				<li><a href="#hwbh">海外百货</a></li>
+				<li><a href="#lstd">零食、甜点</a></li>
 				<li><a href="#ymmz">衣帽、美妆</a></li>
 				<li><a href="#ylwh">娱乐、文化</a></li>
 				<li><a href="#jfjj">家纺、居家</a></li>
 				<li><a href="#qslp">轻奢、礼品</a></li>
-				<li><a href="#lstd">零食、甜点</a></li>
 				<li><a href="#jscy">酒水、茶叶</a></li>
 				<li><a href="#lxcj">旅行、出境</a></li>
 				<li><a href="#zszc">住宿、租车</a></li>
