@@ -1,14 +1,14 @@
 ---
 layout: default
-title: 深度好文|各抒己见
+title: 深度好文|观点
 author: 
-keywords: 各抒己见,文章列表,观点碰撞
+keywords: 观点,文章列表,观点碰撞
 description: 这里是最牛推荐(znr.io)精心采编的各家观点、现实看法的文章列表。znr.io只收录、推荐最牛的有深度的观点！
 
 ---
 
 {% for tag in site.tags %} 
-	{% if tag[0] == "各抒己见" %}
+	{% if tag[0] == "观点" %}
 		<div class="postlist">
 		{% for post in tag[1] %}
 			<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
