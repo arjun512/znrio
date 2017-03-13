@@ -126,7 +126,7 @@ div.center p{
 	padding:0px;
 }
 div.center img{
-	width:100%;
+	max-width:100%;
 }
 div.center h2 {
 	font-size:22px;
