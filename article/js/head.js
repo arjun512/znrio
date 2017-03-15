@@ -1,11 +1,12 @@
 /*百度统计*/
 var _hmt = _hmt || [];
 (function() {
-	var hm = document.createElement("script");
-	hm.src = "https://hm.baidu.com/hm.js?c9b73c086df5779f09a79ac83d19196f";
-	var s = document.getElementsByTagName("script")[0]; 
-	s.parentNode.insertBefore(hm, s);
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8028c12024c7e410bf4ccc38cc8ca298";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
 })();
+
 
 /*百度自动收录*/
 (function(){
