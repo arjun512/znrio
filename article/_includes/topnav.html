@@ -20,10 +20,10 @@
 					<a href="/shop/index.html">电商大全</a>
 				</li>
 				<li>
-					<a href="/wangke/index.html">热门网课</a>
+					<a href="/product/index.html">创意商品</a>
 				</li>
 				<li>
-					<a href="/product/index.html">创意商品</a>
+					<a href="/wangke/index.html">热门网课</a>
 				</li>
 				<li>
 					<a href="/index.html" style="font-weight:bold;color:red">深度好文</a>
@@ -54,14 +54,15 @@
 					<a href="/shop/index.html">电商大全</a>
 				</li>
 				<li>
-					<a href="/wangke/index.html">热门网课</a>
+					<a href="/product/index.html">创意商品</a>
 				</li>
 				<li>
-					<a href="/product/index.html">创意商品</a>
+					<a href="/wangke/index.html">热门网课</a>
 				</li>
 				<li>
 					<a href="/index.html" style="font-weight:bold;color:red">深度好文</a>
 				</li>
+				<li role="separator" class="divider"></li>
 				{% for tag in site.tags %} 
 					{% if tag[0] != "创意商品" %}
 					<li><a href="{{ site.baseurl }}/tags/{{ tag[0]}}.html">{{ tag[0] }}</a></li>
