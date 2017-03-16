@@ -1,6 +1,6 @@
-<nav id="main-nav-bar" class="hidden-xs navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
 	<!-- display sm md lg -->
-	<div class="container" >
+	<div class="container visible-sm-block visible-md-block visible-lg-block" >
 		<div class="navbar-header ">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarshop" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
@@ -8,11 +8,10 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<div class="navbar-brand hidden-sm">
+			<div class="navbar-brand" >
 				<span><a href="/" title="主页">最牛推荐</a></span>
 				<span class="glyphicon glyphicon-hand-right" style="margin-left:15px"></span>
 			</div>
-
 		</div>
 		<div class="collapse navbar-collapse " id="navbarshop">
 			<ul class="nav navbar-nav">
@@ -20,10 +19,10 @@
 					<a href="/shop/index.html">电商大全</a>
 				</li>
 				<li>
-					<a href="/wangke/index.html">热门网课</a>
+					<a href="/wangke/index.html" style="font-weight:bold;color:red">热门网课</a>
 				</li>
 				<li>
-					<a href="/product/index.html" style="font-weight:bold;color:red">创意商品</a>
+					<a href="/product/index.html" >创意商品</a>
 				</li>
 				<li>
 					<a href="/index.html">深度好文</a>
@@ -31,42 +30,43 @@
 			</ul>
 		</div>
 	</div>
-</nav>
-<nav id="main-nav-bar-2" class="visible-xs-block navbar navbar-inverse navbar-static-top">
-	<!-- display sm md lg -->
-	<div class="container" >
+	<!-- display xs -->
+	<div class="container visible-xs-block">
 		<div class="navbar-header ">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarshop-2" aria-expanded="false" aria-controls="navbar">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcolumn" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<div class="navbar-brand hidden-sm">
-				<span><a href="/" title="主页">最牛推荐</a></span>
+			<div class="navbar-brand" >
+				<span><a href="/shop" title="主页">最牛推荐</a></span>
 				<span class="glyphicon glyphicon-hand-right" style="margin-left:15px"></span>
 			</div>
-
 		</div>
-		<div class="collapse navbar-collapse " id="navbarshop-2">
+		<div class="collapse navbar-collapse " id="navbarcolumn">
 			<ul class="nav navbar-nav">
 				<li>
 					<a href="/shop/index.html">电商大全</a>
 				</li>
 				<li>
-					<a href="/wangke/index.html">热门网课</a>
+					<a href="/wangke/index.html" style="font-weight:bold;color:red">热门网课</a>
 				</li>
 				<li>
-					<a href="/product/index.html" style="font-weight:bold;color:red">创意商品</a>
+					<a href="/product/index.html" >创意商品</a>
 				</li>
 				<li>
 					<a href="/index.html">深度好文</a>
 				</li>
-				<li>
-					<a href="/product/index.html">全部</a>
-				</li>
-				{% for tag in site.tags %} 
-					<li><a href="{{ site.baseurl }}/tags/{{ tag[0]}}.html">{{ tag[0] }}</a></li>
+				{% for tag in site.tags %}
+					{% if tag[0] == "热门平台" %}
+					<li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+					{% endif %}
+				{% endfor %}
+				{% for tag in site.tags %}
+					{% if tag[0] != "热门平台" %}
+					<li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+					{% endif %}
 				{% endfor %}
 			</ul>
 		</div>

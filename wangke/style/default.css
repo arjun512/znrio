@@ -1,7 +1,3 @@
-#main-nav-bar-2{
-	padding:0px;
-	margin:0px;
-}
 .body {
 	background-color: #ffffff;
 	padding-left:0px;
@@ -34,7 +30,7 @@
 	background-color: #eee;  
 }  
 
-a.anchor{
+.anchor{
 	display: block;
 	top: -100px;
 	visibility: hidden;
@@ -47,6 +43,13 @@ a.anchor{
 	right: 0;
 	left: 0;
 	z-index: 20;
+}
+div.cover img{
+	width: 250px;
+	height: 250px;
+}
+div.description{
+	line-height:250px;
 }
 
 .navbar-wrapper > .container {
@@ -80,6 +83,10 @@ a.anchor{
 	padding-top:10px;
 	background-color: #ffffff;
 }
+.defaultmain{
+	padding-top:10px;
+	background-color: #ffffff;
+}
 
 .searchbar{
 	padding-top:5px;
@@ -95,7 +102,6 @@ a.anchor{
 .searchbarLinks{
 	padding-top:23px;
 	padding-bottom:2px;
-	width:350px;
 }
 .
 .rightsearch{
@@ -118,9 +124,31 @@ div.lsidebar ul{
 	direction: rtl;
 	padding-right:0px;
 }
+div.defaultcenter p{
+	font-size:16px;
+	font-family: 宋体;
+	line-height: 180%;
+	padding:0px;
+}
+div.defaultcenter img{
+	width:100%;
+}
+div.defaultcenter h2 {
+	font-size:22px;
+	font-family: 宋体;
+	font-weight:bold;
+}
+div.defaultcenter h1 {
+	font-size:24px;
+	font-family: 宋体;
+	font-weight:bold;
+}
+div.defaultcenter a{
+}
 
-.center{
-	margin-left:0px;
+div.defaultcenter pre{
+	font-size: 15px;
+	font-weight:bold;
 }
 
 div.center p{
@@ -130,8 +158,8 @@ div.center p{
 	padding:0px;
 }
 div.center img{
+	width:100%;
 }
-
 div.center h2 {
 	font-size:22px;
 	font-family: 宋体;
@@ -197,16 +225,41 @@ div.column-title p{
 .column-content{
 	padding:0px;
 	font-size:0;
-	padding-bottom:40px;
+	padding-bottom:0px;
 }
 .column-element{
-	margin:0px;
 	width:175px;
-	height:74.46px;
+	height:92px;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+.column-element-nav{
+	width:100px;
+	padding-bottom:0px;
+	padding-top:0px;
+}
+.column-element-title{
+	width:200px;
+	padding-bottom:0px;
+	padding-top:0px;
 }
 div.column-element img{
 	width:  100%;
 	height: 100%;
+}
+
+.column-element:hover .element-bottom{
+	opacity: 1;
+}
+
+.element-bottom{
+	text-align:center;
+	opacity: 0;
+}
+.element-title{
+	text-align:center;
+	color: blue;
+	font-size: 12px;
 }
 
 .rsidebar{
@@ -266,7 +319,7 @@ div.rsidebar-title p{
 		margin-left:0px;
 	}
 	div.center h1 {
-		font-size:22px;
+		font-size:20px;
 		font-family: 宋体;
 		font-weight:bold;
 	}
@@ -275,19 +328,11 @@ div.rsidebar-title p{
 		font-family: 宋体;
 		font-weight:bold;
 	}
-	.body {
-		background-color: #ffffff;
-		padding-left:0px;
-		padding-top:0px;
-		font-family: 宋体;
-		-ms-overflow-style: scrollbar;
-	}
 	.searchbarLinks{
 		padding-top:0px;
 		padding-bottom:0px;
 		margin-top:0px;
-		margin-bottom:0px;
-		width:350px;
+		margin-bottom::0px;
 	}
 }
 
@@ -328,6 +373,13 @@ div.rsidebar-title p{
 	}
 	.main{
 		margin-left:150px;
+	}
+}
+@media (max-width: 1200px){
+	.baidusearch{
+		width:370px;
+		padding-top:10px;
+		display:none;
 	}
 }
 

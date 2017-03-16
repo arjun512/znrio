@@ -1,0 +1,25 @@
+---
+layout: default
+title: 最牛推荐|创意商品
+author: znr.io
+keywords: 创意商品,商品列表,优质实用
+description: 这里是最牛推荐(znr.io)精心采编的特别有创意、特别有创新的、实用并且时尚的优质商品列表。znr.io只收录、推荐最牛的创意商品！
+
+---
+
+{% for tag in site.tags %} 
+	{% if tag[0] == "创意商品" %}
+		<div class="postlist">
+		{% for post in tag[1] %}
+			<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+			<div class="postinfo" >
+				<p><span>{{ post.tags }} / {{ post.author }} / {{ post.createdate }}</span></p>
+			</div>
+			<div class="postdesc">
+				<p>{{ post.description }}... <a href="{{ site.baseurl }}{{ post.url }}">more</a><p>
+			</div>
+			<hr>
+		{% endfor %}
+		</div>
+	{% endif %}
+{% endfor %}

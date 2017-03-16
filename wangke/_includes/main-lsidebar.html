@@ -1,0 +1,9 @@
+<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" >
+	<ul class="nav">
+		{% for tag in site.tags %}
+			{% if tag[0] != "" %}
+			<li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</nav>
