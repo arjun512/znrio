@@ -154,7 +154,7 @@ div.defaultcenter pre{
 div.center p{
 	font-size:16px;
 	font-family: 宋体;
-	line-height: 180%;
+	line-height: 100%;
 	padding:0px;
 }
 div.center img{
@@ -248,7 +248,7 @@ div.column-element img{
 	height: 100%;
 }
 
-.column-element:hover .element-bottom{
+.column-element-nav:hover .element-bottom{
 	opacity: 1;
 }
 

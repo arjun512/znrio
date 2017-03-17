@@ -3,9 +3,9 @@ layout: default
 title: 沪江网校
 author: lijiaocn
 createdate: 2017/03/16 16:13:42
-changedate: 2017/03/16 18:37:22
+changedate: 2017/03/17 18:25:40
 categories:
-tags:  热门平台
+tags: 外语学习
 keywords: 沪江网校首页,沪江,网络课程,网络课程在线学习
 description: 沪江网校开设英语、日语、法语、韩语、泰语、德语、西班牙语和汉语等网校课程，内容横跨升学应试、海外留学、工作商务等。来沪江学外语，更有趣、更有效、更实惠。
 link: http://class.hujiang.com/
