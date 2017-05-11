@@ -1,11 +1,15 @@
 #main-nav-bar-2{
 	padding:0px;
 	margin:0px;
+	border-radius: 0px;  
+}
+#main-nav-bar{
+	border-radius: 0px;  
 }
 .body {
 	background-color: #ffffff;
 	padding-left:0px;
-	padding-top:50px;
+	padding-top:0px;
 	font-family: 宋体;
 	-ms-overflow-style: scrollbar;
 }
@@ -95,7 +99,6 @@ a.anchor{
 .searchbarLinks{
 	padding-top:23px;
 	padding-bottom:2px;
-	width:350px;
 }
 .
 .rightsearch{
@@ -103,8 +106,6 @@ a.anchor{
 
 .lsidebar{
 	float:left;
-	width:120px;
-	position:fixed;
 }
 
 div.lsidebar nav{
@@ -115,8 +116,6 @@ div.lsidebar nav{
 div.lsidebar ul{
 	overflow-y:auto;
 	height:500px;
-	direction: rtl;
-	padding-right:0px;
 }
 
 .center{
@@ -130,25 +129,56 @@ div.center p{
 	padding:0px;
 }
 div.center img{
-}
-
-div.center h2 {
-	font-size:22px;
-	font-family: 宋体;
-	font-weight:bold;
+	max-width:100%;
 }
 div.center h1 {
+	font-size:26px;
+	font-family: 宋体;
+	font-weight:bold;
+	color:black;
+}
+div.center h2 {
 	font-size:24px;
 	font-family: 宋体;
 	font-weight:bold;
+	color:black;
 }
+div.center h3 {
+	font-size:22px;
+	font-family: 宋体;
+	font-weight:bold;
+	color:black;
+}
+div.center h4 {
+	font-size:20px;
+	font-family: 宋体;
+	font-weight:bold;
+	color:black;
+}
+div.center h5 {
+	font-size:18px;
+	font-family: 宋体;
+	font-weight:bold;
+	color:black;
+}
+div.center h6 {
+	font-size:16px;
+	font-family: 宋体;
+	font-weight:bold;
+	color:black;
+}
+
 div.center h2 a{
 	color: #000000;
 }
 
 div.center pre{
-	font-size: 15px;
-	font-weight:bold;
+	font-size: 13px;
+	overflow: auto;
+}
+
+div.center pre code{
+	white-space: pre;
 }
 
 div.postlist p{
@@ -287,7 +317,6 @@ div.rsidebar-title p{
 		padding-bottom:0px;
 		margin-top:0px;
 		margin-bottom:0px;
-		width:350px;
 	}
 }
 
@@ -307,7 +336,6 @@ div.rsidebar-title p{
 
 	/* The navbar becomes detached from the top, so we round the corners */
 	.navbar-wrapper .navbar {
-		border-radius: 4px;
 	}
 
 	/* Bump up size of carousel content */
@@ -325,9 +353,6 @@ div.rsidebar-title p{
 @media (min-width: 992px) {
 	.featurette-heading {
 		margin-top: 120px;
-	}
-	.main{
-		margin-left:150px;
 	}
 }
 
